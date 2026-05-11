@@ -1,66 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="My Restaurant — Built with DesignLooms">
-    <title>My Restaurant</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovaByte Studios — Digital Solutions</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+  <nav class="navbar">
+    <div class="logo">⚡ NovaByte</div>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-    <header class="hero">
-        <nav class="nav">
-            <div class="logo">🍽️ Restaurant Name</div>
-            <div class="nav-links">
-                <a href="#menu">Menu</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
-                <a href="#reservations" class="btn-primary">Reserve</a>
-            </div>
-        </nav>
-        <div class="hero-content">
-            <h1>Experience Fine Dining</h1>
-            <p>Crafted with passion, served with love. Discover our seasonal menu.</p>
-            <a href="#menu" class="btn-primary">View Menu</a>
-        </div>
-    </header>
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <span class="hero-badge">🚀 Launch Your Vision</span>
+      <h1>We Build <span class="gradient-text">Digital Experiences</span> That Matter</h1>
+      <p>From stunning websites to powerful apps — we turn ideas into products people love.</p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-primary">Get Started</a>
+        <a href="#services" class="btn btn-ghost">Our Work →</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">150+</span><span class="stat-label">Projects</span></div>
+        <div class="stat"><span class="stat-num">98%</span><span class="stat-label">Satisfaction</span></div>
+        <div class="stat"><span class="stat-num">24/7</span><span class="stat-label">Support</span></div>
+      </div>
+    </div>
+  </section>
 
-    <section id="menu" class="section">
-        <h2>Our Menu</h2>
-        <div class="grid-3">
-            <div class="card">
-                <h3>🥗 Starters</h3>
-                <p>Fresh salads, soups, and appetizers prepared daily.</p>
-            </div>
-            <div class="card">
-                <h3>🍝 Main Course</h3>
-                <p>Signature dishes crafted by our expert chefs.</p>
-            </div>
-            <div class="card">
-                <h3>🍰 Desserts</h3>
-                <p>Sweet endings to your perfect meal.</p>
-            </div>
-        </div>
-    </section>
+  <section class="services" id="services">
+    <h2>What We Do</h2>
+    <p class="section-sub">Comprehensive digital solutions tailored to your needs</p>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">🎨</div>
+        <h3>UI/UX Design</h3>
+        <p>Beautiful, intuitive interfaces that delight users and drive engagement.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">💻</div>
+        <h3>Web Development</h3>
+        <p>Fast, responsive websites built with modern technology stacks.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">📱</div>
+        <h3>Mobile Apps</h3>
+        <p>Native and cross-platform apps for iOS and Android.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">☁️</div>
+        <h3>Cloud & DevOps</h3>
+        <p>Scalable infrastructure and CI/CD pipelines for seamless deployments.</p>
+      </div>
+    </div>
+  </section>
 
-    <section id="about" class="section section-alt">
-        <h2>About Us</h2>
-        <p>We have been serving delicious food since 2020. Our chefs use only the freshest local ingredients.</p>
-    </section>
+  <section class="about" id="about">
+    <div class="about-content">
+      <h2>Why Choose Us?</h2>
+      <p>We're a team of passionate engineers and designers who believe great software changes the world. Every pixel we place, every line of code we write — it's all in service of creating something extraordinary.</p>
+      <ul class="about-list">
+        <li>✅ 5+ years of industry experience</li>
+        <li>✅ Agile development methodology</li>
+        <li>✅ Transparent pricing, no surprises</li>
+        <li>✅ Dedicated project manager for every client</li>
+      </ul>
+    </div>
+  </section>
 
-    <section id="contact" class="section">
-        <h2>Contact Us</h2>
-        <p>📍 123 Main Street, Your City</p>
-        <p>📞 +91 98765 43210</p>
-        <p>✉️ hello@restaurant.com</p>
-    </section>
+  <section class="contact" id="contact">
+    <h2>Let's Talk</h2>
+    <p class="section-sub">Ready to start your project? Drop us a message.</p>
+    <form class="contact-form" onsubmit="event.preventDefault();alert('Thanks! We will get back to you soon.')">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Tell us about your project..." rows="4" required></textarea>
+      <button type="submit" class="btn btn-primary">Send Message 🚀</button>
+    </form>
+  </section>
 
-    <footer class="footer">
-        <p>&copy; 2025 Restaurant Name. Built with DesignLooms.</p>
-    </footer>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-brand">⚡ NovaByte Studios</div>
+      <p>Crafting digital excellence since 2021.</p>
+      <div class="footer-links">
+        <a href="#">Twitter</a>
+        <a href="#">GitHub</a>
+        <a href="#">LinkedIn</a>
+      </div>
+      <p class="footer-copy">© 2026 NovaByte Studios. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
 </body>
 </html>
